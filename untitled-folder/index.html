@@ -1,0 +1,234 @@
+<!Doctype html>
+<html>
+    <main>
+    <style>
+        main {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding-top: 20px;
+        }
+        .grid {
+display: flex;
+}
+.container {
+    display: grid;
+    width: 100%;
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    color: rgb(65, 63, 63);
+    grid-template-columns: 60px 60px 34px 50px;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+  ". . header"
+  "advert content content"
+  "footer footer footer";
+  position: right;
+  justify-content: right;
+  align-items: center;
+}
+
+#page-wrapper {
+  position: right;
+}
+
+#search-icon{
+    position:absolute;
+    bottom: 18px;
+    left:10px;
+    color: rgb(114, 110, 110);
+}
+
+
+li {
+    display: flex;
+list-style: none;
+}
+        #middle {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            margin: 130px auto 130px auto;
+        }
+        #logo {
+            width: auto;
+            height: 92px;
+            padding-bottom: 80px:
+            align-items: center;
+        }
+        #search {
+            display: block;
+            width: 482px;
+height: 34px;
+color: #495057;
+background-color: #fff;
+background-clip: padding-box;
+border: 1px solid #ced4da;
+border-radius: 24px;
+transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+align-items: center;
+padding-left: 40px;
+}
+#search:hover {
+    background-color:#fff;
+    box-shadow:0 1px 6px rgba(32,33,36,.28);
+    border-color:rgba(223,225,229,0);
+    }
+    body {
+display: block;
+margin-top: 8px;
+width: 100%;
+}
+#searchbar { 
+    position: relative;
+    direction: ltr;
+}
+
+
+#buttons {
+    display: flex;
+            width: 100%;
+            align-items: center;
+            margin: 0px auto -50px auto;
+            position: center;
+            justify-content: center;
+            shadow: 0px;
+            background-clip: padding-box;
+ 
+}
+#submit1 {
+    position: right;
+    align-items: center;
+    justify-content: right;
+  height: 40px;
+  width: 150px;
+  font-size: 14px;
+  font-color: #3c4043;
+  background-color: #f8f9fa;
+border: 2px solid #ffffff;
+border-radius: 6px;
+  cursor: pointer;
+  margin-top: -200px;
+  margin-right: 5px;
+}
+#submit1:hover {
+    border: 1px solid #a6afb4;
+    }
+#submit2 {
+    padding-left: 3px;
+    position: right;
+    align-items: center;
+    justify-content: right;
+  height: 40px;
+  width: 150px;
+  font-size: 14px;
+  font-color: #3c4043;
+  background-color: #f8f9fa;
+border: 2px solid #ffffff;
+border-radius: 6px;
+  cursor: pointer;
+  margin-top: -200px;
+  margin-left: 5px;
+}
+#submit2:hover {
+    border: 1px solid #a6afb4;
+    }
+#languages {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: rgb(34, 34, 34);
+    align-items: center;
+    text-align: center;
+}
+
+#footergrid {
+    background-color:#f2f2f2;
+    font-family: arial,sans-serif;
+    font-size: 15px;
+    color: rgba(0,0,0,.54);
+    height: 92px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    min-width: 587px;
+    text-indent: 30px;
+    margin: 0px 30px 0px -10px;
+}
+
+#country {
+    position: relative;
+    height: 46px;
+    line-height: 46px;
+    border-bottom: 1px solid rgba(204, 202, 202, 0.596);
+    vertical-align: middle;
+
+}
+#settings {
+    display: grid;
+    width: 100%;
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    color: rgb(65, 63, 63);
+    grid-template-columns: 50px 80px 80px auto 60px 50px 100px;
+    grid-template-rows: 46px;
+    grid-template-areas:
+  ". . header"
+  "advert content content"
+  "footer1 . footer";
+  position: bottom;
+  justify-content: bottom;
+  align-items: bottom;
+  background-color:#f2f2f2;
+    font-family: arial,sans-serif;
+    font-size: 15px;
+    color: rgba(0,0,0,.54);
+    height: 46px;
+    line-height: 46px;
+    vertical-align: middle;
+}
+
+
+    </style>
+    <body>
+    <header>
+        <nav id="page-wrapper">
+            <div class="container">
+                <div>Gmail</div>
+                <div>Images</div>
+                <div><link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+                    rel="stylesheet"><span class="material-icons">apps</span></div>
+                    <div><link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+                        rel="stylesheet"><span class="material-icons">account_circle</span></li></div>
+                    
+                </nav>
+    </header>
+</body>
+    <div id="middle">
+        <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        <div id="searchbar">
+            <div id="search-icon"><link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"><span class="material-icons">search</span></div>
+            <div><p><input type="text" name="search" id="search"</p></div>
+        </div>
+    </div>
+    <div id="buttons">
+        <input id="submit1" type="submit" value="Google Search" class="btn" />
+        <input id="submit2" type="submit" value="I'm Feeling Lucky" class="btn" />
+    </div>
+    <div id="languages">Google offered in: العربية Français հայերեն</div>
+</main>
+<footer id="footergrid">
+    <div id="country">Lebanon</div>
+    <div id="settings">
+            <div>About</div>
+            <div>Advertising</div>
+            <div>Business</div>
+            <div>How Search Works</div>
+            <div>Privacy</div>
+            <div>Terms</div>
+            <div>Settings</div>
+        
+    </div>
+</footer>
+</html>
